@@ -1,4 +1,4 @@
-/* Reset & dasar */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +14,10 @@ body {
   align-items: center;
   scroll-behavior: smooth;
   min-height: 100vh;
-  padding-top: 70px; /* untuk space navbar */
+  padding-top: 70px; 
 }
 
-/* NAVBAR */
+
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -57,11 +57,11 @@ nav ul li a.active {
   transition: all 0.3s ease;
 }
 
-/* PROFILE dengan background parallax dan overlay */
+
 .profile-container {
   position: relative;
   text-align: center;
-  background: url('aset2.jpg') no-repeat center center;
+  background: url('img/aset2.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   border-radius: 20px;
@@ -74,7 +74,7 @@ nav ul li a.active {
   margin: 20px 0;
 }
 
-/* Overlay gelap */
+
 .profile-container::before {
   content: "";
   position: absolute;
@@ -110,7 +110,7 @@ nav ul li a.active {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
-/* Section umum */
+
 section {
   width: 90%;
   max-width: 800px;
@@ -122,7 +122,7 @@ section {
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* Pendidikan */
+
 .education-section h2,
 .work-section h2,
 .social-section h2 {
@@ -150,7 +150,7 @@ section {
   color: #e0e0e0;
 }
 
-/* Pengalaman */
+
 .work-section {
   background-color: #1b1f1b;
 }
@@ -174,7 +174,7 @@ section {
   color: #e0e0e0;
 }
 
-/* Kontak */
+
 .social-section {
   background-color: #2a1b2f;
 }
@@ -215,7 +215,7 @@ section {
 .social-item a:hover {
   text-decoration: underline;
 }
-/* Navbar */
+
 nav {
   position: fixed;
   top: 0;
@@ -261,16 +261,16 @@ nav ul li a.active {
   color: #64b5f6;
 }
 
-/* Scroll behavior */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Jarak top untuk section supaya tidak tertutup navbar */
+
 section {
   scroll-margin-top: 70px;
 }
-/* Efek Fade dan Slide saat Scroll */
+
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -282,7 +282,7 @@ section {
   transform: none;
 }
 
-/* Hover efek pendidikan & pengalaman */
+
 .education-item:hover,
 .work-item:hover,
 .social-item:hover {
@@ -291,7 +291,7 @@ section {
   transition: 0.3s ease;
 }
 
-/* Tombol Scroll to Top */
+
 #scrollToTop {
   position: fixed;
   bottom: 30px;
@@ -312,7 +312,7 @@ section {
   background-color: #2196f3;
 }
 
-/* Animasi garis bawah di navigasi */
+
 nav ul li a {
   position: relative;
 }
@@ -333,7 +333,7 @@ nav ul li a.active::after {
   width: 100%;
 }
 
-/* Responsive (opsional) */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -351,9 +351,9 @@ nav ul li a.active::after {
     margin-bottom: 10px;
   }
 }
-/* Responsif untuk layar kecil (mobile) */
+
 @media (max-width: 768px) {
-  /* Navigasi jadi kolom dan full lebar */
+  
   nav {
     flex-direction: column;
     height: auto;
@@ -379,29 +379,29 @@ nav ul li a.active::after {
     font-size: 16px;
   }
 
-  /* Logo lebih kecil dan tidak terlalu lebar */
+ 
   nav .logo img {
     height: 35px;
     margin-bottom: 10px;
   }
 
-  /* Profil gambar lebih kecil */
+
   .profile-image {
     width: 120px;
     height: 120px;
   }
 
-  /* Bagian section padding lebih kecil */
+  
   section {
     padding: 30px 15px;
   }
 
-  /* Font nama profil sedikit lebih kecil */
+
   .profile-name {
     font-size: 24px;
   }
 }
-/* Sembunyikan menu toggle di desktop */
+
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -409,7 +409,7 @@ nav ul li a.active::after {
   cursor: pointer;
 }
 
-/* Style default nav menu */
+
 #nav-menu {
   list-style: none;
   display: flex;
@@ -418,14 +418,14 @@ nav ul li a.active::after {
   padding: 0;
 }
 
-/* RESPONSIVE NAVIGATION */
+
 @media (max-width: 768px) {
-  /* Tampilkan tombol hamburger */
+  
   .menu-toggle {
     display: block;
   }
 
-  /* Sembunyikan menu secara default */
+ 
   #nav-menu {
     display: none;
     flex-direction: column;
