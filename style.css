@@ -61,7 +61,7 @@ nav ul li a.active {
 .profile-container {
   position: relative;
   text-align: center;
-  background: url('img/aset2.jpg') no-repeat center center;
+  background: url('aset2.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   border-radius: 20px;
