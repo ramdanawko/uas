@@ -9,10 +9,10 @@
 </head>
 <body>
 
-  <!-- Navigasi Menu -->
+
  <nav>
   <div class="logo">
-    <img src="r3.png" alt="Logo" />
+    <img src="img/r3.png" alt="Logo" />
   </div>
   <div class="menu-toggle" id="menu-toggle">
     <i class="fas fa-bars"></i>
@@ -38,9 +38,9 @@
   window.addEventListener("load", revealSection);
 </script>
 <button id="scrollToTop" title="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
-<!-- Script Animasi Scroll & Button -->
+
 <script>
-  // Efek scroll muncul
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -51,7 +51,7 @@
 
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  // Tombol ke atas
+ 
   const scrollBtn = document.getElementById('scrollToTop');
   window.onscroll = () => {
     scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
@@ -62,7 +62,7 @@
   };
 </script>
 
-<!-- Script untuk toggle menu responsive -->
+
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
@@ -71,7 +71,7 @@
     navMenu.classList.toggle('active');
   });
 
-  // Tutup menu jika klik di link navigasi
+ 
   document.querySelectorAll('#nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
       navMenu.classList.remove('active');
@@ -79,13 +79,13 @@
   });
 </script>
 
-  <!-- Profil -->
+  
   <section class="profile-container" id="profile">
-    <img src="321.jpeg" alt="Foto Profil" class="profile-image" />
+    <img src="img/321.jpeg" alt="Foto Profil" class="profile-image" />
     <div class="profile-name">Muhamad Ramadhan Putra Salman</div>
   </section>
 
-  <!-- Riwayat Pendidikan -->
+  
   <section class="education-section" id="education">
     <h2>Riwayat Pendidikan</h2>
     <div class="education-list">
@@ -108,7 +108,7 @@
     </div>
   </section>
 
-  <!-- Pengalaman -->
+  
   <section class="work-section" id="work">
     <h2>Pengalaman</h2>
     <div class="work-list">
@@ -123,7 +123,7 @@
     </div>
   </section>
 
-  <!-- Kontak Sosial -->
+
   <section class="social-section" id="contact">
     <h2>Hubungi Saya</h2>
     <div class="social-list">
@@ -158,12 +158,12 @@
   window.addEventListener("scroll", revealSection);
   window.addEventListener("load", revealSection);
 </script>
-<!-- Tombol Scroll to Top -->
+
 <button id="scrollToTop" title="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
 
-<!-- Script Animasi Scroll & Button -->
+
 <script>
-  // Efek scroll muncul
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
